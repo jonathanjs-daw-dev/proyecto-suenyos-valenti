@@ -1,13 +1,88 @@
+:root {
+  --fuente-principal: "Plus Jakarta Sans", sans-serif;
+  --color-texto: #1b2d52;
+  --color-suave: #4a5568;
+  --bg-fondo: #f8fafc;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    color: #333;
-    line-height: 1.6;
+  font-family: var(--fuente-principal);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: var(--bg-fondo);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0.5rem 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d0e0ff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  font-family: var(--fuente-principal);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  transition: all 0.3s ease;
+
+  &:disabled {
+    background: #cbd5e1;
+    color: #94a3b8;
+    border-color: #cbd5e1;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+button:hover {
+  background: var(--color-texto);
+  color: white;
+}
+
+#main-content {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  flex-grow: 1;
+  background-color: #83adff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.session-btn {
+  margin-top: 1rem;
 }

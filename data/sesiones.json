@@ -22,5 +22,53 @@
     "precio": 205,
     "duracion": "150 min",
     "nivel": "Avanzado"
+  },
+  {
+    "id": 4,
+    "nombre": "Viaje al Ser Interno",
+    "descripcion": "Sesión de 90 minutos de introspección profunda guiada para conectar con tu esencia más pura",
+    "precio": 105,
+    "duracion": "90 min",
+    "nivel": "Principiante"
+  },
+  {
+    "id": 5,
+    "nombre": "Meditación del Despertar",
+    "descripcion": "Conexión con tu conciencia superior a través de técnicas avanzadas de meditación trascendental",
+    "precio": 200,
+    "duracion": "120 min",
+    "nivel": "Intermedio"
+  },
+  {
+    "id": 6,
+    "nombre": "Conexión SupraConsciente",
+    "descripcion": "Experiencia transformadora de expansión de conciencia y conexión con planos superiores",
+    "precio": 205,
+    "duracion": "150 min",
+    "nivel": "Avanzado"
+  },
+  {
+    "id": 7,
+    "nombre": "Viaje al Ser Interno",
+    "descripcion": "Sesión de 90 minutos de introspección profunda guiada para conectar con tu esencia más pura",
+    "precio": 105,
+    "duracion": "90 min",
+    "nivel": "Principiante"
+  },
+  {
+    "id": 8,
+    "nombre": "Meditación del Despertar",
+    "descripcion": "Conexión con tu conciencia superior a través de técnicas avanzadas de meditación trascendental",
+    "precio": 200,
+    "duracion": "120 min",
+    "nivel": "Intermedio"
+  },
+  {
+    "id": 9,
+    "nombre": "Conexión SupraConsciente",
+    "descripcion": "Experiencia transformadora de expansión de conciencia y conexión con planos superiores",
+    "precio": 205,
+    "duracion": "150 min",
+    "nivel": "Avanzado"
   }
 ]

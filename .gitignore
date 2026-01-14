@@ -1,0 +1,33 @@
+# Extensiones de sistema (macOS)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Extensiones de sistema (Windows)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Carpetas de dependencias (por si usas npm en el futuro)
+node_modules/
+dist/
+
+# Configuración de editores (VS Code, JetBrains)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Logs y temporales
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.logs/
+*.log
+
+# Entorno y claves (por seguridad)
+.env
+.env.local
