@@ -4,7 +4,12 @@ export const mostrarSesiones = (sesiones) => {
   contenedor.innerHTML = "";
   //iteramos sobre los elementos de las sesiones
   sesiones.forEach((sesion) => {
-    console.log(sesion);
+    const infoLevel =
+      sesion.nivel === "Principiante"
+        ? "green"
+        : sesion.nivel === "Intermedio"
+        ? "orange"
+        : "red";
     //creacion de elementos
     const card = document.createElement("div");
     card.classList.add("card");
@@ -22,12 +27,13 @@ export const mostrarSesiones = (sesiones) => {
     duration.innerHTML = `<strong>Duración:</strong> ${sesion.duracion}.`;
 
     const level = document.createElement("p");
-    level.innerHTML = `<strong>Nivel:</strong> ${sesion.nivel}.`;
+    level.classList.add("level-text");
+    level.innerHTML = `<strong>Nivel:</strong> <span class='info-level' style="background-color: ${infoLevel}"></span> ${sesion.nivel}.`;
 
     const addToCart = document.createElement("button");
     addToCart.dataset.id = sesion.id;
     addToCart.classList.add("session-btn");
-    addToCart.innerHTML = `Añadir al carro`;
+    addToCart.innerHTML = `Añadir al Carrito`;
 
     card.appendChild(title);
     card.appendChild(description);
