@@ -43,3 +43,23 @@ export const actualizarInfoCarrito = () => {
     }
   }
 };
+
+export function filtrarSesiones(sesiones, textoBusqueda, nivelFiltro) {
+  // filtrado de sesiones segun criterios de busqueda y nivel
+  let sesionesFiltradas = sesiones;
+
+  if (textoBusqueda && textoBusqueda.trim() !== "") { // si textoBusqueda existe y despues de limpiar espacios y verificar que no sea vacio
+    const textoBusquedaLower = textoBusqueda.toLowerCase();
+    sesionesFiltradas = sesionesFiltradas.filter((sesion) => {
+      return sesion.nombre.toLowerCase().includes(textoBusquedaLower);
+    });
+  }
+
+  if (nivelFiltro && nivelFiltro !== "Todos") {
+    sesionesFiltradas = sesionesFiltradas.filter((sesion) => {
+      return sesion.nivel === nivelFiltro;
+    });
+  }
+
+  return sesionesFiltradas;
+}
