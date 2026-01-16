@@ -108,3 +108,25 @@ Se evaluará:
 - Código comprensible
 - Interfaz cuidada
 - Buen uso de nombres y comentarios
+
+## CAPTURAS DE PANTALLA
+
+### Interfaz Principal
+
+![Interfaz Principal](./images/Screenshot%202026-01-16%20at%2011.41.36.png)
+
+### Vista de Sesiones
+
+![Interfaz Principal](./images/Screenshot%202026-01-16%20at%2011.44.41.png)
+
+### Búsqueda y Filtros
+
+![Interfaz Principal](./images/Screenshot%202026-01-16%20at%2011.45.27.png)
+
+### Carrito de Compras
+
+![Interfaz Principal](./images/Screenshot%202026-01-16%20at%2011.46.05.png)
+
+### localStorage Persistente
+
+![Interfaz Principal](./images/Screenshot%202026-01-16%20at%2011.47.00.png)
