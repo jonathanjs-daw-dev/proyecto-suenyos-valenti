@@ -50,8 +50,14 @@ btnVerSesiones.addEventListener("click", async () => {
       inputBuscar.value = "";
     }
 
+    // Reseteamos el select de niveles
+    const selectNivel = document.getElementById("levels");
+    if (selectNivel) {
+      selectNivel.value = "Todos";
+    }
+
     // Mostramos los controles de búsqueda y filtros
-    document.getElementById("search-controls").style.display = "block";
+    document.getElementById("search-controls").style.display = "flex";
 
     // Mostramos todas las sesiones (sin filtros)
     mostrarSesiones(sesionesData);
@@ -81,6 +87,36 @@ btnVaciarCarrito.addEventListener("click", () => {
 
     console.log("Carrito vaciado correctamente");
   }
+});
+
+// Event: Input de búsqueda
+const inputBuscar = document.getElementById('search-input');
+inputBuscar.addEventListener('input', (evento) => {
+  // Actualizamos el estado con el valor del input
+  textoBusquedaActual = evento.target.value;
+  aplicarFiltros();
+});
+
+// Event: Select de filtro por nivel
+const selectNivel = document.getElementById('levels');
+selectNivel.addEventListener('change', (evento) => {
+  // Actualizamos el nivel seleccionado desde el value del select
+  nivelFiltroActual = evento.target.value;
+  aplicarFiltros();
+});
+
+// evento para limpiar filtros
+const btnLimpiarFiltros = document.getElementById('clear-filters-btn');
+btnLimpiarFiltros.addEventListener('click', () => {
+  // reseteamos las variables de estado
+  textoBusquedaActual = '';
+  nivelFiltroActual = 'Todos';
+
+  // limpiamos input y selector
+  inputBuscar.value = '';
+  selectNivel.value = 'Todos';
+
+  aplicarFiltros();
 });
 
 // Inicialización: Actualizar info del carrito al cargar la página

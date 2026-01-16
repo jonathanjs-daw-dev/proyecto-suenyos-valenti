@@ -13,7 +13,7 @@
     <title>Sueños Valenti</title>
   </head>
   <body>
-    <header>
+    <header id="header-content">
       <h1 id="title">Sueños Valenti</h1>
       <h3 id="description">
         Portal de Sesiones Interactivas de Supra Consciencia
@@ -30,31 +30,32 @@
       </nav>
     </header>
 
-    <section id="search-controls" style="display: none">
-      <div class="search-section">
-        <label for="search-input">Buscar sesión:</label>
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Escribe el nombre de una sesión..."
-        />
-      </div>
-
-      <div class="filter-section">
-        <label>Filtrar por nivel:</label>
-        <button class="filter-level active" data-nivel="Todos">Todos</button>
-        <button class="filter-level" data-nivel="Principiante">
-          Principiante
-        </button>
-        <button class="filter-level" data-nivel="Intermedio">Intermedio</button>
-        <button class="filter-level" data-nivel="Avanzado">Avanzado</button>
-      </div>
-
-      <button id="clear-filters-btn">Limpiar Filtros</button>
-    </section>
-
     <main id="main-content">
-      <p>No hay sesiones.</p>
+      <section id="search-controls" style="display: none">
+        <div class="search-section">
+          <label for="search-input">Buscar sesión:</label>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Escribe el nombre de una sesión..."
+          />
+        </div>
+
+        <div class="filter-section">
+          <label for="levels">Filtrar por nivel:</label>
+          <select name="levels" id="levels">
+            <option value="Todos">Todos</option>
+            <option value="Principiante">Principiante</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+          </select>
+        </div>
+        <button id="clear-filters-btn">Limpiar Filtros</button>
+      </section>
+
+      <div id="sessions-container">
+        <p>No hay sesiones.</p>
+      </div>
     </main>
     <footer id="footer-content">
       <p>

@@ -7,7 +7,7 @@ import { actualizarInfoCarrito } from "./utils.js";
 
 export const mostrarSesiones = (sesiones) => {
   //limpieza
-  const contenedor = document.getElementById("main-content");
+  const contenedor = document.getElementById("sessions-container");
   contenedor.innerHTML = "";
 
   // Obtenemos el carrito actual para saber qué cantidades mostrar
