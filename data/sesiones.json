@@ -5,7 +5,8 @@
     "descripcion": "Sesión de 90 minutos de introspección profunda guiada para conectar con tu esencia más pura",
     "precio": 105,
     "duracion": "90 min",
-    "nivel": "Principiante"
+    "nivel": "Principiante",
+    "cantidad": 0
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "descripcion": "Conexión con tu conciencia superior a través de técnicas avanzadas de meditación trascendental",
     "precio": 200,
     "duracion": "120 min",
-    "nivel": "Intermedio"
+    "nivel": "Intermedio",
+    "cantidad": 0
   },
   {
     "id": 3,
@@ -21,30 +23,25 @@
     "descripcion": "Experiencia transformadora de expansión de conciencia y conexión con planos superiores",
     "precio": 205,
     "duracion": "150 min",
-    "nivel": "Avanzado"
+    "nivel": "Avanzado",
+    "cantidad": 0
   },
   {
     "id": 4,
-    "nombre": "Viaje al Ser Interno",
-    "descripcion": "Sesión de 90 minutos de introspección profunda guiada para conectar con tu esencia más pura",
-    "precio": 105,
-    "duracion": "90 min",
-    "nivel": "Principiante"
+    "nombre": "Iniciacion Astral",
+    "descripcion": "Sesión de 60 minutos de viaje astral por las nebulosas de tu subconsciente",
+    "precio": 100,
+    "duracion": "60 min",
+    "nivel": "Principiante",
+    "cantidad": 0
   },
   {
     "id": 5,
-    "nombre": "Meditación del Despertar",
-    "descripcion": "Conexión con tu conciencia superior a través de técnicas avanzadas de meditación trascendental",
-    "precio": 200,
-    "duracion": "120 min",
-    "nivel": "Intermedio"
-  },
-  {
-    "id": 6,
-    "nombre": "Conexión SupraConsciente",
-    "descripcion": "Experiencia transformadora de expansión de conciencia y conexión con planos superiores",
-    "precio": 205,
-    "duracion": "150 min",
-    "nivel": "Avanzado"
+    "nombre": "Meditación Crepuscular",
+    "descripcion": "Conexión con tu conciencia superior a través de técnicas avanzadas de meditación trascendental enfocada en el anochecer y los procesos de apagado del cuerpo en conexion con los ritmos lunares.",
+    "precio": 180,
+    "duracion": "100 min",
+    "nivel": "Intermedio",
+    "cantidad": 0
   }
 ]

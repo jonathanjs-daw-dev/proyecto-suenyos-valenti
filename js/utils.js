@@ -1,3 +1,5 @@
+import { obtenerCantidadTotal, calcularTotal } from "./carrito.js";
+
 const retraso = (tiempoDeEspera) =>
   new Promise((resolve) => setTimeout(resolve, tiempoDeEspera));
 
@@ -15,5 +17,29 @@ export const obtenerSesiones = async () => {
   } catch (error) {
     console.error(`Error: ${error}`);
     throw error;
+  }
+};
+
+export const actualizarInfoCarrito = () => {
+  // actualiza la info del carrito en el header del html
+  // muestra: cantidad total de las sesiones, el precio total y muestra u oculta el boton de vaciar carro
+  // Obtenemos los datos del carrito
+
+  const cantidad = obtenerCantidadTotal();
+  const total = calcularTotal();
+
+  // Actualizamos los elementos del DOM
+  const cantidadElement = document.getElementById("cantidad-carrito");
+  const totalElement = document.getElementById("total-carrito");
+  const btnVaciar = document.getElementById("btn-vaciar-carrito");
+
+  cantidadElement.textContent = cantidad;
+  totalElement.textContent = total.toFixed(2);
+  if (btnVaciar) {
+    if (cantidad > 0) {
+      btnVaciar.style.display = "inline-block";
+    } else {
+      btnVaciar.style.display = "none";
+    }
   }
 };
