@@ -5,7 +5,7 @@ import { vaciarCarrito } from "./carrito.js";
 // Variable global para almacenar las sesiones cargadas
 let sesionesGlobales = null;
 
-const btnVerSesiones = document.getElementById("btn-ver-sesiones");
+const btnVerSesiones = document.getElementById("fetch-sessions-btn");
 btnVerSesiones.addEventListener("click", async () => {
   try {
     btnVerSesiones.disabled = true;
@@ -14,6 +14,9 @@ btnVerSesiones.addEventListener("click", async () => {
 
     // Guardamos las sesiones en la variable global
     sesionesGlobales = sesionesData;
+
+    // Mostramos los controles de búsqueda y filtros
+    document.getElementById("search-controls").style.display = "block";
 
     mostrarSesiones(sesionesData);
     console.log("Datos de las sesiones::", sesionesData);
@@ -26,16 +29,18 @@ btnVerSesiones.addEventListener("click", async () => {
   }
 });
 
-const btnVaciarCarrito = document.getElementById("btn-vaciar-carrito");
+const btnVaciarCarrito = document.getElementById("empty-cart-btn");
 btnVaciarCarrito.addEventListener("click", () => {
   // pedimos confirmacion al usuario usando confirm
-  const confirmacion = confirm("¿Estás seguro de que quieres vaciar el carrito?");
+  const confirmacion = confirm(
+    "¿Estás seguro de que quieres vaciar el carrito?"
+  );
 
   if (confirmacion) {
     vaciarCarrito();
     actualizarInfoCarrito();
-    if (sesionesGlobales) {                                                                                                                     
-      mostrarSesiones(sesionesGlobales);                                                                                                        
+    if (sesionesGlobales) {
+      mostrarSesiones(sesionesGlobales);
     }
     console.log("Carrito vaciado correctamente");
   }

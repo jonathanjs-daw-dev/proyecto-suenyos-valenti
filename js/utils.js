@@ -29,9 +29,9 @@ export const actualizarInfoCarrito = () => {
   const total = calcularTotal();
 
   // Actualizamos los elementos del DOM
-  const cantidadElement = document.getElementById("cantidad-carrito");
-  const totalElement = document.getElementById("total-carrito");
-  const btnVaciar = document.getElementById("btn-vaciar-carrito");
+  const cantidadElement = document.getElementById("quantity-cart");
+  const totalElement = document.getElementById("total-cart");
+  const btnVaciar = document.getElementById("empty-cart-btn");
 
   cantidadElement.textContent = cantidad;
   totalElement.textContent = total.toFixed(2);

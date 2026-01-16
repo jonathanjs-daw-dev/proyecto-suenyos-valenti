@@ -18,25 +18,41 @@
       <h3 id="description">
         Portal de Sesiones Interactivas de Supra Consciencia
       </h3>
-      <div id="info-carrito">
-        <span
-          >Sesiones en carrito: <strong id="cantidad-carrito">0</strong></span
-        >
-        <span>Total: <strong id="total-carrito">0.00</strong>€</span>
-        <button
-          id="btn-vaciar-carrito"
-          class="remove-btn"
-          style="display: none"
-        >
+      <div id="cart-info">
+        <span>Sesiones en carrito: <strong id="quantity-cart">0</strong></span>
+        <span>Total: <strong id="total-cart">0.00</strong>€</span>
+        <button id="empty-cart-btn" class="remove-btn" style="display: none">
           Vaciar Carrito
         </button>
       </div>
       <nav>
-        <button id="btn-ver-sesiones">Ver Sesiones</button>
-        <button>Carrito</button>
-        <button>Preferencias</button>
+        <button id="fetch-sessions-btn">Ver Sesiones</button>
       </nav>
     </header>
+
+    <section id="search-controls" style="display: none">
+      <div class="search-section">
+        <label for="search-input">Buscar sesión:</label>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Escribe el nombre de una sesión..."
+        />
+      </div>
+
+      <div class="filter-section">
+        <label>Filtrar por nivel:</label>
+        <button class="filter-level active" data-nivel="Todos">Todos</button>
+        <button class="filter-level" data-nivel="Principiante">
+          Principiante
+        </button>
+        <button class="filter-level" data-nivel="Intermedio">Intermedio</button>
+        <button class="filter-level" data-nivel="Avanzado">Avanzado</button>
+      </div>
+
+      <button id="clear-filters-btn">Limpiar Filtros</button>
+    </section>
+
     <main id="main-content">
       <p>No hay sesiones.</p>
     </main>
